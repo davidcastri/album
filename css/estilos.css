@@ -1,0 +1,114 @@
+p, h1, h2, a {
+  font-family: arial, helvetica, sans-serif;
+}
+header{
+  width: 100%;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  padding: 1px 1px 1px 1px;
+}
+@media (min-width:500px){
+header{
+  display:flex;
+  flex-flow: row;
+  height: 80px;
+}
+#menu {
+  position:absolute;
+  right: 40px;
+  top: 70px;
+  word-spacing: 20px;
+}
+#secundaria{
+  display: flex;
+  flex-flow: row;
+}
+footer{
+  display:flex;
+  flex-flow: row;
+  text-align: center;
+  }}
+@media (max-width:499px){
+header{
+  display:flex;
+  flex-flow: column;
+  text-align: center;
+  height: 120px;
+}
+#menu {
+  position:absolute;
+  right: 40px;
+  top: 110px;
+  word-spacing: 20px;
+}
+#secundaria{
+  display: flex;
+  flex-flow: column;
+}
+footer{
+  display:flex;
+  flex-flow: column;
+  text-align: center;
+  }}
+header h1 {
+  color: white;
+  text-align: left;
+  text-shadow: 1px 1px 3px;
+  padding: 0px 0px 1px 5px;
+}
+#contenido{
+  display:flex;
+  flex-flow: column;
+  }
+#principal{
+  width: 100%;
+  background-color: #82c3a6;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#secundaria{
+  width: 100%;
+  background-color: #d5c75f;
+  text-align: center;
+  border: 1px;
+  padding-top: 20px;
+}
+.image1{
+  width: 50%;
+}
+.image2{
+  width: 50%;
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+a {
+  color: darkblue;
+  font-weight: bold;
+}
+figure .ico {
+  width:20px ;
+  height:20px
+}
+a p {
+  font-style: italic;
+}
+#paisaje:hover {
+  transform: rotate(10deg);
+}
+#retrato:hover {
+  transform: translate(20px,-5px);
+}
+footer{
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+  padding-left: 10px;
+}
+#contac, #term, #redes, #dere {
+  width: 25%;
+}
+#links {
+  display:flex;
+  flex-flow:wrap;
+  padding-right: 10px;
+}

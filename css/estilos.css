@@ -1,54 +1,96 @@
+@-webkit-keyframes inicio {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
 p, h1, h2, a {
-  font-family: arial, helvetica, sans-serif;
+  font-family: "Dancing Script", cursive;
+}
+body{
+  background-color: black;
 }
 header{
   width: 100%;
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   padding: 1px 1px 1px 1px;
+  animation-name: inicio;
+  animation-duration: 1s;
 }
-@media (min-width:500px){
+@media (min-width:900px){
+#contenido{
+  width: 900px
+}
 header{
   display:flex;
   flex-flow: row;
   height: 80px;
 }
 #menu {
-  position:absolute;
-  right: 40px;
-  top: 70px;
+  position:relative;
+  left: 35%;
+  top: 40%;
   word-spacing: 20px;
 }
-#secundaria{
+#principal2, #secundaria1, #secundaria2{
   display: flex;
   flex-flow: row;
+}
+.image1, .image2{
+  width: 50%;
+}
+.image3{
+  width: 33%;
+  height: 300px;
 }
 footer{
   display:flex;
   flex-flow: row;
   text-align: center;
+  }
+  #contac, #term, #redes, #dere {
+    width: 25%;
   }}
-@media (max-width:499px){
+@media (max-width:899px){
+  #contenido{
+    width: 100%
+  }
 header{
   display:flex;
   flex-flow: column;
   text-align: center;
-  height: 120px;
+
 }
 #menu {
-  position:absolute;
-  right: 40px;
-  top: 110px;
+  position:relative;
+  bottom: 10px;
+  margin: 0 auto;
   word-spacing: 20px;
 }
-#secundaria{
+#principal2, #secundaria1, #secundaria2{
   display: flex;
   flex-flow: column;
+}
+.image1, .image2{
+  width: 60%;
+}
+.image3{
+  width: 60%;
+
 }
 footer{
   display:flex;
   flex-flow: column;
   text-align: center;
+  }
+  #contac, #term, #redes, #dere {
+    width: 100%;
   }}
 header h1 {
   color: white;
@@ -57,41 +99,56 @@ header h1 {
   padding: 0px 0px 1px 5px;
 }
 #contenido{
+  margin: 0 auto;
+}
+#elementos{
+  align-items: center;
   display:flex;
   flex-flow: column;
   }
-#principal{
+#principal1{
   width: 100%;
   background-color: #82c3a6;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#secundaria{
+#principal2, #secundaria1, #secundaria2{
   width: 100%;
   background-color: #d5c75f;
   text-align: center;
   border: 1px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .image1{
-  width: 50%;
+  margin: 0 auto;
 }
 .image2{
-  width: 50%;
   box-shadow: 2px 2px 2px #82c3a6;
   border: 2px;
+  margin: 0 auto;
+}
+.image3{
+  padding-left: 2px;
+  margin: 0 auto;
 }
 a {
-  color: darkblue;
+  color: white;
   font-weight: bold;
 }
-figure .ico {
+img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+.ico {
   width:20px ;
-  height:20px
+  height:20px;
+  position: relative;
+  left: 25px;
 }
 a p {
   font-style: italic;
+
 }
 #paisaje:hover {
   transform: rotate(10deg);
@@ -104,11 +161,28 @@ footer{
   background-color: #C6d5c5;
   padding-left: 10px;
 }
-#contac, #term, #redes, #dere {
-  width: 25%;
-}
 #links {
   display:flex;
   flex-flow:wrap;
-  padding-right: 10px;
+  text-align: left;
+  }
+#links a{
+  display:flex;
+  flex-flow: row;
+  position: relative;
+  right: 30px;
+  color: black;
+  margin: 0 auto;
+}
+#f1 {
+  -webkit-filter:<blur(10px)>;
+  filter:blur(10px);
+}
+#f2, #f4, #f6 {
+  -webkit-filter:<grayscale(100%)>;
+  filter:grayscale(100%);
+}
+#f3{
+  -webkit-filter:<sepia(90%)>;
+  filter:sepia(90%);
 }
